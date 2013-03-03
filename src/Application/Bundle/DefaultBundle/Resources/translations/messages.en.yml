@@ -1,0 +1,26 @@
+brand:
+    name: Velofestival "Match Volga cities"
+xcm:
+    menu-top:
+        information: About project
+        contacts: Contacts As
+    menu-left:
+      home: Home
+      results: Results
+      take_part: Take part
+      information: Information
+      reglament: Reglament
+      players: Members
+      archive: Archive
+      video: Video
+      photo: Photo
+      article: Articles
+      pay: Pay for part
+      faq: FAQ
+    menu-right:
+      lastTweets: Last tweets
+      links: Links
+      sportmir:
+        address: street 5th garden, 9B
+        phone: 47-000-1, 588-348
+

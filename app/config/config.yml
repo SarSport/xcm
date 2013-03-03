@@ -1,0 +1,109 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+
+framework:
+    #esi:             ~
+    translator:      { fallback: %locale% }
+    secret:          %secret%
+    router:          { resource: "%kernel.root_dir%/config/routing.yml" }
+    form:            true
+    csrf_protection: true
+    #validation:      { enable_annotations: true }
+    templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
+    session: ~
+    default_locale: %locale%
+sensio_framework_extra:
+    view:           { annotations: true }
+
+# Twig Configuration
+twig:
+    debug:            %kernel.debug%
+    strict_variables: %kernel.debug%
+
+# Assetic Configuration
+assetic:
+    debug:          %kernel.debug%
+    use_controller: false
+    # java: /usr/bin/java
+    filters:
+        cssrewrite: ~
+        # closure:
+        #     jar: %kernel.root_dir%/java/compiler.jar
+        # yui_css:
+        #     jar: %kernel.root_dir%/java/yuicompressor-2.4.2.jar
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        driver:   %database_driver%
+        host:     %database_host%
+        port:     %database_port%
+        dbname:   %database_name%
+        user:     %database_user%
+        password: %database_password%
+        charset:  UTF8
+
+    orm:
+        auto_generate_proxy_classes: %kernel.debug%
+        auto_mapping: true
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: %mailer_transport%
+    host:      %mailer_host%
+    username:  %mailer_user%
+    password:  %mailer_password%
+    spool:     { type: memory }
+
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: SarSport\Bundle\UserBundle\Entity\User
+    group:
+        group_class: SarSport\Bundle\UserBundle\Entity\Group
+    registration:
+        confirmation:
+            enabled:    true
+            from_email:
+                address:        registration@sarsport.ru
+                sender_name:    SarSport Registration
+        form:
+            type: sarsport_user_registration
+    resetting:
+        email:
+            from_email:
+                address:        resetting@sarsport.ru
+                sender_name:    SarSport Resetting
+    from_email:
+        address:        noreply@sarsport.ru
+        sender_name:    SarSport common sportsmen base
+
+#escape_wsse_authentication:
+#    provider_class: Escape\WSSEAuthenticationBundle\Security\Authentication\Provider\Provider
+#    listener_class: Escape\WSSEAuthenticationBundle\Security\Firewall\Listener
+#    factory_class: Escape\WSSEAuthenticationBundle\Security\Factory\WSSEFactory
+stfalcon_payment:
+    interkassa:
+        shop_id: %interkassa_shop_id%
+        secret_key: %interkassa_secret_key%
+
+#knp_zend_cache:
+#    templates:
+#        knp_last_tweets:
+#            frontend:
+#                name: Core
+#                options:
+#                    lifetime: 300
+#                    automatic_serialization: true
+#            backend:
+#                name: File
+#                options:
+#                    cache_dir: %kernel.root_dir%/cache/%kernel.environment%
+
+knp_last_tweets:
+    fetcher:
+        driver: api
+        #driver: zend_cache
+        #options:
+        #    cache_name: knp_last_tweets

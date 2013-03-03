@@ -1,0 +1,62 @@
+#banner-top {
+    background-image:url(../images/banner-top-background.png);
+}
+
+#content_wrapper{
+    float: left;
+    width: 100%;
+}
+.xcm-designer-name {
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+#main_column{
+    /*border-right:1px solid #999;*/
+    padding-right:20px;
+}
+
+.latest_item {
+    padding-left:32px;
+    padding-top:4px;
+    padding-bottom:6px;
+    font-size:13px;
+}
+
+.latest_lecture {
+    background-image:url(../images/navbar_icons/lecture.png);
+    background-repeat:no-repeat;
+}
+
+.latest_quiz {
+    background-image:url(../images/navbar_icons/quiz.png);
+    background-repeat:no-repeat;
+}
+
+.latest_assignment {
+    background-image:url(../images/navbar_icons/assignment.png);
+    background-repeat:no-repeat;
+}
+
+.right_category {
+    margin-bottom:15px;
+}
+
+.due_date {
+    font-size:10px;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #005580;
+    margin-bottom: 5px;
+}
+.knp_last_tweets ul {
+    margin-left:0;
+    list-style:none;
+}
+.knp_last_tweets li {
+    border-bottom-width: 1px;
+    border-bottom-color: #1c567f;
+    border-bottom-style: solid;
+
+}

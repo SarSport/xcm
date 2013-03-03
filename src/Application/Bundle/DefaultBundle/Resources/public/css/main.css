@@ -1,0 +1,155 @@
+#banner-top {
+    height:80px;
+    margin-top: 40px;
+    border-bottom: solid 2px #CCC;
+    position:fixed;right:0;left:0;z-index:1030;
+}
+#main-container {
+    margin-top:120px;
+}
+#sarsport-logo-text {
+    float:left;
+}
+
+#banner-sarsport-info {
+    float:right;
+    color:white;
+    margin-right:20px;
+    margin-top:20px;
+    text-align:right;
+}
+
+.page-sidebar-left {
+    padding-top:10px;
+    /*border-right:1px solid #999;*/
+}
+
+.page-sidebar-right {
+    padding-top:10px;
+}
+
+.page-content {
+    padding-top:10px;
+}
+
+ul.navbar {
+    list-style-type:none;
+    margin-left:0px;
+}
+
+.navbar_item {
+    padding-left:32px;
+    padding-top:4px;
+    padding-bottom:4px;
+    font-size:14px;
+}
+
+.navbar_home {
+    background-image:url(../images/navbar_icons/home.png);
+    background-repeat:no-repeat;
+}
+
+.navbar_pay {
+    background-image:url(../images/navbar_icons/pay.png);
+    background-repeat:no-repeat;
+}
+
+.navbar_members {
+    background-image:url(../images/navbar_icons/members.png);
+    background-repeat:no-repeat;
+}
+
+.navbar_join {
+    background-image:url(../images/navbar_icons/join.png);
+    background-repeat:no-repeat;
+}
+
+.navbar_video {
+    background-image:url(../images/navbar_icons/video.png);
+    background-repeat:no-repeat;
+}
+
+.navbar_photo {
+    background-image:url(../images/navbar_icons/photo.png);
+    background-repeat:no-repeat;
+}
+
+.navbar_article {
+    background-image:url(../images/navbar_icons/article.png);
+    background-repeat:no-repeat;
+}
+
+.navbar_quiz {
+    background-image:url(../images/navbar_icons/quiz.png);
+    background-repeat:no-repeat;
+}
+
+.navbar_information {
+    background-image:url(../images/navbar_icons/information.png);
+    background-repeat:no-repeat;
+}
+
+.navbar_reglament {
+    background-image:url(../images/navbar_icons/reglament.png);
+    background-repeat:no-repeat;
+}
+
+.navbar_forum {
+    background-image:url(../images/navbar_icons/forum.png);
+    background-repeat:no-repeat;
+}
+
+.navbar_wiki {
+    background-image:url(../images/navbar_icons/wiki.png);
+    background-repeat:no-repeat;
+}
+
+.navbar_document {
+    background-image:url(../images/navbar_icons/document.png);
+    background-repeat:no-repeat;
+}
+
+.navbar_results {
+    background-image:url(../images/navbar_icons/results.png);
+    background-repeat:no-repeat;
+}
+
+.sarsport-announcement {
+    padding:20px;
+    background-color:#f9f9f9;
+}
+
+.hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.page-sidebar > ul > li > a{
+  display: block;
+}
+
+#sarsport-logo-text > a{
+  display: block;
+}
+
+.plain-table tbody th, .plain-table tbody td{
+  border: none;
+  padding: 2px 4px;
+}
+
+.nav a, .nav span{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.navbar .nav>li>span{display:block;float:none;padding:10px 10px 11px;line-height:19px;color:#999999;text-decoration:none;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);}
+
+blockquote {
+    border-left-color: #005580;
+}
+blockquote p {
+}
+
+

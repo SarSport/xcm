@@ -1,0 +1,25 @@
+brand:
+    name: Велофестиваль «МАТЧ ГОРОДОВ ПОВОЛЖЬЯ»
+xcm:
+    menu-top:
+        information: О проекте
+        contacts: Контакты
+    menu-left:
+      home: Главная
+      results: Результаты
+      take_part: Подать заявку
+      information: Информация
+      reglament: Положение
+      players: Участники
+      archive: Архив
+      video: Видео
+      photo: Фото
+      article: Статьи
+      pay: Оплатить участие
+      faq: FAQ
+    menu-right:
+      lastTweets: Последние твиты
+      links: Ссылки
+      sportmir:
+        address: ул. 5-я дачная, 9В
+        phone: 47-000-1, 588-348

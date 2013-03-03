@@ -1,0 +1,48 @@
+{% extends "::base.html.twig" %}
+{% block sub_title %}. Информация{% endblock %}
+{% block content %}
+<h1 xmlns="http://www.w3.org/1999/html">Инфрмация</h1>
+        <h2>Велофестиваль «МАТЧ ГОРОДОВ ПОВОЛЖЬЯ» при поддержке GIANT</h2>
+    <div class="clearfix"></div>
+
+    <div class="clearfix">
+        <h3>Развлекательная программа фестиваля (мини соревнования), проект:</h3>
+        <p>«Самый быстрый» - 50 метровая дистанция на время, кто быстрее. Отборочные старты и финал.</p>        
+        <p>«Самый медленный» - 50 метровая дистанция на время, кто медленнее. Отборочные старты и финал.</p>
+        <p>«Царь горы» - заезд в гору, кто выше заедет (не слезая и не касаясь земли). Без учета времени.
+и другие.</p>
+        <p><strong>Ждем Ваших предложений и пожеланий.</strong></p>
+    </div>
+
+    <div class="clearfix">
+        <h3>Район соревнований</h3>
+        <div class="thumbnail span6">
+            {% image '@DefaultBundle/Resources/public/images/race_map_big.jpg'%}
+            <a href="{{ asset_url }}" title="В полном размере">
+                {% endimage %}
+                {% image '@DefaultBundle/Resources/public/images/race_map_small.jpg'%}
+                <img src="{{ asset_url }}"/>
+                {% endimage %}
+            </a>
+        </div>
+    </div>
+
+    <div class="clearfix">
+        <h3>Проезд</h3>
+        <p>Добраться до Хвалынска можно:</p>
+        <ul>
+            <li>Из г.Саратова. Автобусом (Растояние 240 км., время в пути 3,5-4 часа). Сайт <a href="http://avtovokzal.region64.ru/">http://avtovokzal.region64.ru/</a>;</li>
+            <li>Из г. Сызрань. Автобусом (Растояние 85 км., время в пути 1,5-2 часа). Сайт <a href="http://www.autovokzal63.ru/">http://www.autovokzal63.ru/</a>.</li>
+        </ul>
+        <p>Возможно будет трансфер (большой автобус). О стоимости, условиях, времени  отправления - будет сообщено позже.</p>
+
+        <div class="thumbnail span6">
+            {% image '@DefaultBundle/Resources/public/images/region_map.jpg'%}
+            <img src="{{ asset_url }}"/>
+            {% endimage %}
+        </div>
+    </div>
+    <div class="clearfix">
+        <p>Последнее изменение страницы от 3 марта</p>
+    </div>
+{% endblock %}

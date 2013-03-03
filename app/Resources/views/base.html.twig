@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="XC-марафон">
+        <title>{% block title %} {{ 'brand.name'|trans }} {% block sub_title %}{% endblock %} {% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/default/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/default/css/bootstrap-responsive.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/default/css/main.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/default/css/xcm.css') }}">
+        {% block stylesheets %}{% endblock %}
+        {% block favicon %}<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon" />{% endblock %}
+        <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <script src="{{ asset('bundles/default/js/jquery-v1.7.1.min.js') }}"></script>
+        {#<script src="{{ asset('bundles/default/js/json.js') }}"></script>
+        <script src="{{ asset('bundles/default/js/hc_fix.js') }}"></script>
+
+        <script src="{{ asset('bundles/default/js/bootstrap/bootstrap-modal.js') }}"></script>
+        <script src="{{ asset('bundles/default/js/modal_focus.js') }}"></script>
+        <script src="{{ asset('bundles/default/js/bind_modal_focus.js') }}"></script>#}
+    </head>
+    <body>
+        {% block body %}
+            {% block topbar %}{% include '::topbar.html.twig' %}{% endblock %}
+            {% block topbanner %}{% include '::topbanner.html.twig' %}{% endblock %}
+            {% block container %}
+                <div class="container-fluid">
+                    <div class="row-fluid" id="main-container">
+                        <div class="span12">
+                            <div class="row-fluid">
+                                {% block sidebar %}
+                                <div class="span2 page-sidebar-left" id="page-sidebar">
+                                    {% block leftMenu %}
+                                        {% include '::navbar.html.twig' %}
+                                    {% endblock %}
+                                </div>
+                                {% endblock %}
+                                {% block centerBar %}
+                                <div class="span7 page-content" id="page-content">
+                                    <div id="main_column">
+                                        {% block flashMessages %}
+                                            {% block errorMmessage %}
+                                                {% if app.session.flash('error') %}
+                                                <div class="alert-message error">
+                                                    <p><em>Error</em>: {{ app.session.flash('error') }}</p>
+                                                </div>
+                                                {% endif %}
+                                            {% endblock %}
+                                            {% block successMessage %}
+                                                {% if app.session.flash('notice') %}
+                                                <div class="alert-message success">
+                                                    <p><em>Notice</em>: {{ app.session.flash('notice') }}</p>
+                                                </div>
+                                                {% endif %}
+                                            {% endblock %}
+                                        {% endblock %}
+                                        {% block content %}{% endblock %}
+                                    </div>
+                                </div>
+                                {% endblock %}
+                                {% block sidebar_right %}
+                                <div class="span3 page-sidebar-right">
+                                    <div class="right_category">
+                                        <h4><a href="https://twitter.com/OvG_SarSport">{{ 'xcm.menu-right.lastTweets' | trans }}</a></h4>
+                                        {% render "KnpLastTweetsBundle:Twitter:lastTweets" with {'username': 'xcm_SarSport', 'limit': 5} %}
+                                        <h4>{{ 'xcm.menu-right.links' | trans }}</h4>
+                                        <ul style="list-style:none;margin:0px;padding:0px;border:0px;">
+
+                                            <li class="clearfix">
+                                                <div class="thumbnail span2">
+                                                    {% image '@DefaultBundle/Resources/public/images/banners/sportmir.jpg'%}
+                                                    <a href="http://shop.sarsport.ru" class="thumbnail" target="_blank"><img src="{{ asset_url }}"/></a>
+                                                    {% endimage %}
+                                                    <div class="caption">
+                                                        {{ 'xcm.menu-right.sportmir.address' | trans }}<br />
+                                                        {{ 'xcm.menu-right.sportmir.phone' | trans }}
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="thumbnail span2" style="margin-top: 5px;">
+                                                <a class="thumbnail" href='http://sarbike.ru' target="_blank">
+                                                    <img src='http://sarbike.ru/images/img1.gif' border='0' width='88' height='31' alt='Sarbike.ru' title='Все о горных велосипедах' />
+                                                </a></div>
+                                            </li>
+                                            {#<li>#}
+                                                {#<div class="thumbnail span2" style="margin-top: 5px;">#}
+                                                    {#<!-- Gismeteo informer START -->#}
+                                                    {#<link rel="stylesheet" type="text/css" href="http://www.gismeteo.ru/static/css/informer2/gs_informerClient.min.css">#}
+                                                    {#<div id="gsInformerID-2g1Pu5On" class="gsInformer" style="width:168px;height:291px">#}
+                                                        {#<div class="gsIContent"><div id="cityLink"><a href="http://www.gismeteo.ru/city/daily/5017/" target="_blank">Погода в Хвалынске</a></div>#}
+                                                            {#<div class="gsLinks">#}
+                                                                {#<table><tr><td>#}
+                                                                    {#<div class="leftCol"><a href="http://www.gismeteo.ru" target="_blank"><img alt="Gismeteo" title="Gismeteo" src="http://www.gismeteo.ru/static/images/informer2/logo-mini2.png" align="absmiddle" border="0" /><span>Gismeteo</span></a></div>#}
+                                                                    {#<div class="rightCol"><a href="http://www.gismeteo.ru/city/weekly/5017/" target="_blank">Подробнее</a></div>#}
+
+
+                                                                {#</td></tr></table>#}
+                                                            {#</div>#}
+                                                        {#</div>#}
+                                                    {#</div>#}
+                                                    {#<script src="http://www.gismeteo.ru/ajax/getInformer/?hash=2g1Pu5On" type="text/javascript"></script>#}
+                                                    {#<!-- Gismeteo informer END -->#}
+                                                {#</div>#}
+                                            {#</li>#}
+                                        </ul>
+                                    </div>
+                                </div>
+                                {% endblock %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endblock %}
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+        {% block cloudim %}{% include '::cloudim.html.twig' %}{% endblock %}
+        {% include '::counters.html.twig' %}
+    </body>
+</html>
