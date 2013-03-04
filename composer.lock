@@ -389,12 +389,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jdorn/sql-formatter.git",
-                "reference": "3d8a97325e5894c72dd5c4d4f83dd3722d414d99"
+                "reference": "2efc4bb4f6f154d67125d313b1412926fe9d70ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/3d8a97325e5894c72dd5c4d4f83dd3722d414d99",
-                "reference": "3d8a97325e5894c72dd5c4d4f83dd3722d414d99",
+                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/2efc4bb4f6f154d67125d313b1412926fe9d70ee",
+                "reference": "2efc4bb4f6f154d67125d313b1412926fe9d70ee",
                 "shasum": ""
             },
             "require": {
@@ -428,7 +428,7 @@
                 "highlight",
                 "sql"
             ],
-            "time": "2013-02-22 05:16:19"
+            "time": "2013-03-03 19:18:19"
         },
         {
             "name": "jms/aop-bundle",
@@ -748,12 +748,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "df03baa337ae1c87803a7b1a76a393f8a59813f3"
+                "reference": "v1.1.0-alpha4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/df03baa337ae1c87803a7b1a76a393f8a59813f3",
-                "reference": "df03baa337ae1c87803a7b1a76a393f8a59813f3",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/v1.1.0-alpha4",
+                "reference": "v1.1.0-alpha4",
                 "shasum": ""
             },
             "require": {
@@ -923,12 +923,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PHPExcel.git",
-                "reference": "6145cf326b7492c2297430f5acdf71c5712027d1"
+                "reference": "65f6ebf0490a0d87ba56e977db417085e8849853"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/6145cf326b7492c2297430f5acdf71c5712027d1",
-                "reference": "6145cf326b7492c2297430f5acdf71c5712027d1",
+                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/65f6ebf0490a0d87ba56e977db417085e8849853",
+                "reference": "65f6ebf0490a0d87ba56e977db417085e8849853",
                 "shasum": ""
             },
             "require": {
@@ -971,7 +971,7 @@
                 "xls",
                 "xlsx"
             ],
-            "time": "2013-03-01 21:38:13"
+            "time": "2013-03-01 21:39:33"
         },
         {
             "name": "sarsport/sarsport-application-bundle",
@@ -980,12 +980,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SarSport/SarSportApplicationBundle.git",
-                "reference": "f7b90f16ea5cc6f6c74464057f313328ea7e5b96"
+                "reference": "f3b1e084479ef423e1dfa3db42973fb56a61b6b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SarSport/SarSportApplicationBundle/zipball/f7b90f16ea5cc6f6c74464057f313328ea7e5b96",
-                "reference": "f7b90f16ea5cc6f6c74464057f313328ea7e5b96",
+                "url": "https://api.github.com/repos/SarSport/SarSportApplicationBundle/zipball/f3b1e084479ef423e1dfa3db42973fb56a61b6b3",
+                "reference": "f3b1e084479ef423e1dfa3db42973fb56a61b6b3",
                 "shasum": ""
             },
             "require": {
@@ -1023,7 +1023,7 @@
                 "rogaining",
                 "sport"
             ],
-            "time": "2013-02-24 18:12:33"
+            "time": "2013-03-04 15:58:54"
         },
         {
             "name": "sarsport/sarsport-user-bundle",
@@ -1032,12 +1032,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SarSport/SarSportUserBundle.git",
-                "reference": "339a59c7079ae43ac76a57e09e73910716e0be61"
+                "reference": "c282ceb7fd5a59787b7e2151557b742f6a338dc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SarSport/SarSportUserBundle/zipball/339a59c7079ae43ac76a57e09e73910716e0be61",
-                "reference": "339a59c7079ae43ac76a57e09e73910716e0be61",
+                "url": "https://api.github.com/repos/SarSport/SarSportUserBundle/zipball/c282ceb7fd5a59787b7e2151557b742f6a338dc2",
+                "reference": "c282ceb7fd5a59787b7e2151557b742f6a338dc2",
                 "shasum": ""
             },
             "require": {
@@ -1070,7 +1070,7 @@
                 "rogaining",
                 "sport"
             ],
-            "time": "2013-02-17 12:50:41"
+            "time": "2013-03-04 15:54:23"
         },
         {
             "name": "sensio/distribution-bundle",
@@ -1318,16 +1318,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/AsseticBundle.git",
-                "reference": "6985b26ba44f12a3804af8beb53f6b6e49da5b04"
+                "reference": "36e9594e8b3661d9901c22dcd58c3ffb9f116401"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/6985b26ba44f12a3804af8beb53f6b6e49da5b04",
-                "reference": "6985b26ba44f12a3804af8beb53f6b6e49da5b04",
+                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/36e9594e8b3661d9901c22dcd58c3ffb9f116401",
+                "reference": "36e9594e8b3661d9901c22dcd58c3ffb9f116401",
                 "shasum": ""
             },
             "require": {
-                "kriswallsmith/assetic": "1.1.*",
+                "kriswallsmith/assetic": ">=1.1.0-alpha4,<1.2-dev",
                 "php": ">=5.3.0",
                 "symfony/framework-bundle": ">=2.1.0,<2.3-dev"
             },
@@ -1372,7 +1372,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-02-24 18:21:16"
+            "time": "2013-03-04 15:29:32"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -1673,7 +1673,9 @@
             "time": "2013-02-28 14:08:49"
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+
+    ],
     "aliases": [
 
     ],
@@ -1686,5 +1688,11 @@
         "sarsport/sarsport-application-bundle": 20,
         "stfalcon/payment-bundle": 20,
         "knplabs/knp-last-tweets-bundle": 20
-    }
+    },
+    "platform": {
+        "php": ">=5.3.3"
+    },
+    "platform-dev": [
+
+    ]
 }
