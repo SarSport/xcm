@@ -76,16 +76,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "fd45c6f6baa618d871f3201fabe76df5043abb1e"
+                "reference": "569f1aed578585df904c7dbfc43aa39cb09877cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/fd45c6f6baa618d871f3201fabe76df5043abb1e",
-                "reference": "fd45c6f6baa618d871f3201fabe76df5043abb1e",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/569f1aed578585df904c7dbfc43aa39cb09877cc",
+                "reference": "569f1aed578585df904c7dbfc43aa39cb09877cc",
                 "shasum": ""
             },
             "require": {
-                "doctrine/common": "2.3.*",
+                "doctrine/common": ">=2.3.0,<2.5-dev",
                 "php": ">=5.3.2"
             },
             "type": "library",
@@ -110,7 +110,7 @@
                     "homepage": "http://www.jwage.com/"
                 },
                 {
-                    "name": "Christoph Dorn",
+                    "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com",
                     "homepage": "http://www.instaclick.com"
                 },
@@ -131,7 +131,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2013-01-20 11:50:36"
+            "time": "2013-03-04 22:37:48"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -208,12 +208,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "304acf0a1af15ebe049231b84a7630c75ecbe62d"
+                "reference": "563fdb953be4f86eeb5b9ab82e82e6a98cf14f6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/304acf0a1af15ebe049231b84a7630c75ecbe62d",
-                "reference": "304acf0a1af15ebe049231b84a7630c75ecbe62d",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/563fdb953be4f86eeb5b9ab82e82e6a98cf14f6b",
+                "reference": "563fdb953be4f86eeb5b9ab82e82e6a98cf14f6b",
                 "shasum": ""
             },
             "require": {
@@ -270,7 +270,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2013-02-21 18:03:42"
+            "time": "2013-03-12 21:53:10"
         },
         {
             "name": "fightmaster/dao",
@@ -325,16 +325,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "4b59ab8d063eeed9292cec7fedd6b3a3631e4e84"
+                "reference": "1f2cd0cd5a557fad31dc99ad7eec227d05ad0af5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/4b59ab8d063eeed9292cec7fedd6b3a3631e4e84",
-                "reference": "4b59ab8d063eeed9292cec7fedd6b3a3631e4e84",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/1f2cd0cd5a557fad31dc99ad7eec227d05ad0af5",
+                "reference": "1f2cd0cd5a557fad31dc99ad7eec227d05ad0af5",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
+                "symfony/form": ">=2.1,<2.3-dev",
                 "symfony/framework-bundle": ">=2.1,<2.3-dev",
                 "symfony/security-bundle": ">=2.1,<2.3-dev"
             },
@@ -381,7 +382,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2013-03-01 14:56:23"
+            "time": "2013-03-07 11:48:46"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -389,16 +390,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jdorn/sql-formatter.git",
-                "reference": "2efc4bb4f6f154d67125d313b1412926fe9d70ee"
+                "reference": "999f8125a66f44da7ee53db64e7aee3be8fa91ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/2efc4bb4f6f154d67125d313b1412926fe9d70ee",
-                "reference": "2efc4bb4f6f154d67125d313b1412926fe9d70ee",
+                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/999f8125a66f44da7ee53db64e7aee3be8fa91ec",
+                "reference": "999f8125a66f44da7ee53db64e7aee3be8fa91ec",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
             },
             "type": "library",
             "extra": {
@@ -428,7 +432,7 @@
                 "highlight",
                 "sql"
             ],
-            "time": "2013-03-03 19:18:19"
+            "time": "2013-03-11 18:41:07"
         },
         {
             "name": "jms/aop-bundle",
@@ -748,12 +752,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "v1.1.0-alpha4"
+                "reference": "fcee205a5a3a859c009d976ba3acfe67958e912c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/v1.1.0-alpha4",
-                "reference": "v1.1.0-alpha4",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/fcee205a5a3a859c009d976ba3acfe67958e912c",
+                "reference": "fcee205a5a3a859c009d976ba3acfe67958e912c",
                 "shasum": ""
             },
             "require": {
@@ -811,7 +815,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-02-24 17:22:20"
+            "time": "2013-03-05 17:56:54"
         },
         {
             "name": "kriswallsmith/buzz",
@@ -819,12 +823,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/Buzz.git",
-                "reference": "9bc2ff5b82d40edeba07cfb28d84b8ed21bae31e"
+                "reference": "e4310004bced0598b690fd648df9c0e97fa8f984"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/9bc2ff5b82d40edeba07cfb28d84b8ed21bae31e",
-                "reference": "9bc2ff5b82d40edeba07cfb28d84b8ed21bae31e",
+                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/e4310004bced0598b690fd648df9c0e97fa8f984",
+                "reference": "e4310004bced0598b690fd648df9c0e97fa8f984",
                 "shasum": ""
             },
             "require": {
@@ -859,7 +863,7 @@
                 "curl",
                 "http client"
             ],
-            "time": "2013-03-02 00:25:43"
+            "time": "2013-03-06 06:11:47"
         },
         {
             "name": "monolog/monolog",
@@ -923,12 +927,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PHPExcel.git",
-                "reference": "65f6ebf0490a0d87ba56e977db417085e8849853"
+                "reference": "316f86e03c02b9112bd7c54de83b5738defd869f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/65f6ebf0490a0d87ba56e977db417085e8849853",
-                "reference": "65f6ebf0490a0d87ba56e977db417085e8849853",
+                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/316f86e03c02b9112bd7c54de83b5738defd869f",
+                "reference": "316f86e03c02b9112bd7c54de83b5738defd869f",
                 "shasum": ""
             },
             "require": {
@@ -971,7 +975,7 @@
                 "xls",
                 "xlsx"
             ],
-            "time": "2013-03-01 21:39:33"
+            "time": "2013-03-10 23:15:57"
         },
         {
             "name": "sarsport/sarsport-application-bundle",
@@ -1318,12 +1322,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/AsseticBundle.git",
-                "reference": "36e9594e8b3661d9901c22dcd58c3ffb9f116401"
+                "reference": "f481b74d5e67a55b24b62fe2c484d26b2bd1988c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/36e9594e8b3661d9901c22dcd58c3ffb9f116401",
-                "reference": "36e9594e8b3661d9901c22dcd58c3ffb9f116401",
+                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/f481b74d5e67a55b24b62fe2c484d26b2bd1988c",
+                "reference": "f481b74d5e67a55b24b62fe2c484d26b2bd1988c",
                 "shasum": ""
             },
             "require": {
@@ -1372,7 +1376,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-03-04 15:29:32"
+            "time": "2013-03-05 04:14:20"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -1582,12 +1586,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig-extensions.git",
-                "reference": "921799aaf05f88af749d72912d6b154dfeb9a03e"
+                "reference": "v1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig-extensions/zipball/921799aaf05f88af749d72912d6b154dfeb9a03e",
-                "reference": "921799aaf05f88af749d72912d6b154dfeb9a03e",
+                "url": "https://api.github.com/repos/fabpot/Twig-extensions/zipball/v1.0.0",
+                "reference": "v1.0.0",
                 "shasum": ""
             },
             "require": {
@@ -1629,12 +1633,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "39d94faabcea7d60b90c2996d51e1b6691ab39d2"
+                "reference": "ba67e2cf8e2ca6cada1de5a316a724df648c52ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/39d94faabcea7d60b90c2996d51e1b6691ab39d2",
-                "reference": "39d94faabcea7d60b90c2996d51e1b6691ab39d2",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/ba67e2cf8e2ca6cada1de5a316a724df648c52ac",
+                "reference": "ba67e2cf8e2ca6cada1de5a316a724df648c52ac",
                 "shasum": ""
             },
             "require": {
@@ -1670,7 +1674,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-02-28 14:08:49"
+            "time": "2013-03-10 07:23:01"
         }
     ],
     "packages-dev": [
