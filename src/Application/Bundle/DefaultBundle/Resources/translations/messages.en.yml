@@ -4,6 +4,7 @@ xcm:
     menu-top:
         information: About project
         contacts: Contacts As
+        forgot_password: Forgot your password?
     menu-left:
       home: Home
       results: Results

@@ -4,6 +4,7 @@ xcm:
     menu-top:
         information: О проекте
         contacts: Контакты
+        forgot_password: Забыли пароль?
     menu-left:
       home: Главная
       results: Результаты

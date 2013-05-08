@@ -23,6 +23,9 @@
                 <li>
                     <a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a>
                 </li>
+                <li>
+                    <a href="{{ path('fos_user_resetting_request') }}">{{ 'xcm.menu-top.forgot_password'|trans }}</a>
+                </li>
                 {% endif %}
             </ul>
         </div>
