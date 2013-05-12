@@ -18,6 +18,7 @@ xcm:
       article: Articles
       pay: Pay for part
       faq: FAQ
+      results: Results
     menu-right:
       lastTweets: Last tweets
       links: Links
