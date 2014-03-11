@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "ab23a479bf7830f05c0fd8773c467dc3",
+    "hash": "06f3e29906d6035495d8ccf9c857677d",
     "packages": [
         {
             "name": "doctrine/common",
@@ -983,17 +983,17 @@
         },
         {
             "name": "sarsport/sarsport-application-bundle",
-            "version": "dev-xcm",
+            "version": "dev-xcm-2014",
             "target-dir": "SarSport/Bundle/SarSportApplicationBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SarSport/SarSportApplicationBundle.git",
-                "reference": "f3b1e084479ef423e1dfa3db42973fb56a61b6b3"
+                "reference": "270f79a77cd7955c2fd792fb1c46e2968bdbad51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SarSport/SarSportApplicationBundle/zipball/f3b1e084479ef423e1dfa3db42973fb56a61b6b3",
-                "reference": "f3b1e084479ef423e1dfa3db42973fb56a61b6b3",
+                "url": "https://api.github.com/repos/SarSport/SarSportApplicationBundle/zipball/270f79a77cd7955c2fd792fb1c46e2968bdbad51",
+                "reference": "270f79a77cd7955c2fd792fb1c46e2968bdbad51",
                 "shasum": ""
             },
             "require": {
@@ -1031,7 +1031,7 @@
                 "rogaining",
                 "sport"
             ],
-            "time": "2013-03-04 15:58:54"
+            "time": "2014-03-11 19:12:14"
         },
         {
             "name": "sarsport/sarsport-user-bundle",
