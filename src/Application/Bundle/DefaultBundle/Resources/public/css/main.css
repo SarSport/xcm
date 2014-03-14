@@ -114,6 +114,11 @@ ul.navbar {
     background-repeat:no-repeat;
 }
 
+.navbar_vk {
+    background-image:url(../images/navbar_icons/vk.png);
+    background-repeat:no-repeat;
+}
+
 .sarsport-announcement {
     padding:20px;
     background-color:#f9f9f9;
